@@ -1,21 +1,51 @@
-const env = require('./config/environment');
+const env = require('../config/environment');
 const mongoose = require('mongoose');
 mongoose.connect(env.dbUri);
-const City = require('../models/city');
+const Resturant = require('../models/restaurant');
 
-const cityData = [
+const restaurantData = [
   {
-    name: 'London'
+    name: 'Hozi',
+    city: 'London',
+    comments: [{
+      rating: 8,
+      user: 'Jumee',
+      content: 'Great restaurant!'
+    }]
   },
   {
-    name: 'New York'
+    name: 'Hangang',
+    city: 'London',
+    comments: [{
+      rating: 3,
+      user: 'Sean',
+      content: 'So so...'
+    }]
+  },
+  {
+    name: 'Kimchi',
+    city: 'London',
+    comments: [{
+      rating: 6,
+      user: 'Kate',
+      content: 'Could be better.'
+    }]
+  },
+  {
+    name: 'NY K-Place',
+    city: 'New York',
+    comments: [{
+      rating: 8,
+      user: 'James',
+      content: 'Awesome place.'
+    }]
   }
 ];
 
-City.collection.drop();
+Resturant.collection.drop();
 
-City.create(cityData)
-  .then(cities => {
-    console.log(`Created ${cities.length}`);
+Resturant.create(restaurantData)
+  .then(resturants => {
+    console.log(`Created ${resturants.length}`);
     mongoose.connection.close();
   });

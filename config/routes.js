@@ -1,14 +1,14 @@
 const router = require('express').Router();
-const cityController = require('../controllers/cityController');
+const rController = require('../controllers/rController');
 
-// router.get('/', (req, res) => {
-//   console.log('Home page loaded');
-//   res.render('pages/home');
-// });
+//HOME PAGE
+// INDEX ROUTE
+router.get('/', rController.restaurantNewRoute);
 
-//ADD NEW CITY
-//Show user a form
-router.get('/', cityController.cityNewRoute);
+// CREATE ROUTE
+router.post('/cities', rController.restaurantCreateRoute);
 
+// SHOW ROUTE
+router.get('/restaurants/:city', rController.restaurantShowRoute);
 
 module.exports = router;

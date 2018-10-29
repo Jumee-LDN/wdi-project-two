@@ -5,6 +5,9 @@ const router = require('./config/routes');
 const mongoose = require('mongoose');
 mongoose.connect(env.dbUri);
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const expressLayouts = require('express-ejs-layouts');
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
