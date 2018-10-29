@@ -1,8 +1,26 @@
 * {
-  background-color: lightskyblue;
+  background-color: inherit;
+}
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 500px;
+  background-color:lightskyblue;
+}
+
+ul {
+  height: 30px;
+  width: 100vw;
+  background-color: yellow;
+  padding: 0.8rem 0 0.8rem 0.8rem;
+  margin: 0;
 }
 
 li {
   display: inline-block;
   padding-right: 10px;
+}
+
+.city-search{
+    min-height: 300px;
 }
