@@ -7,38 +7,22 @@ const restaurantData = [
   {
     name: 'Hozi',
     city: 'London',
-    comments: [{
-      rating: 8,
-      user: 'Jumee',
-      content: 'Great restaurant!'
-    }]
+    rating: 9
   },
   {
     name: 'Hangang',
     city: 'London',
-    comments: [{
-      rating: 3,
-      user: 'Sean',
-      content: 'So so...'
-    }]
+    rating: 4
   },
   {
     name: 'Kimchi',
     city: 'London',
-    comments: [{
-      rating: 6,
-      user: 'Kate',
-      content: 'Could be better.'
-    }]
+    rating: 6
   },
   {
     name: 'NY K-Place',
     city: 'New York',
-    comments: [{
-      rating: 8,
-      user: 'James',
-      content: 'Awesome place.'
-    }]
+    rating: 8
   }
 ];
 

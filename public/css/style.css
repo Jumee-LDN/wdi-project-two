@@ -3,9 +3,12 @@
 }
 body {
   margin: 0;
+  background-color:lightskyblue;
+}
+
+.main {
   height: 100%;
   min-height: 500px;
-  background-color:lightskyblue;
 }
 
 ul {

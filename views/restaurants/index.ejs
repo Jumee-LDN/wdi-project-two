@@ -1,3 +1,12 @@
+<h2>Korean Restaurants in <%= city %></h2>
+
+<div class="">
+  <button><a href="/restaurants/new">CREATE REVIEW</a></button>
+</div>
+
+<hr>
 <% restaurants.forEach(restaurant => { %>
-  <h1><%= restaurant.name %></h1>
+  <div class="">
+    <h1><a href="/restaurants/<%= restaurant.id %>"><%= restaurant.name %></a></h1>
+  </div>
 <% }) %>
