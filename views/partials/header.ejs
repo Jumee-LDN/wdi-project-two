@@ -2,9 +2,13 @@
   <ul>
     <li><a href="/">hungry korilla</a></li>
     <li><a href="/">CITY</a></li>
-    <li><a href="/restaurants/new">ADD REVIEW</a></li>
-    <li><a href="/register">SIGN UP</a></li>
-    <li><a href="/login">LOG IN</a></li>
-    <li><a href="/logout">LOG OUT</a></li>
+
+  <% if(locals.isLoggedIn) { %>
+      <li><a href="/restaurants/new">ADD REVIEW</a></li>
+      <li><a href="/logout">LOG OUT</a></li>
+  <% } else { %>
+      <li><a href="/login">LOG IN</a></li>
+      <li><a href="/register">SIGN UP</a></li>
+  <% } %>
   </ul>
 </nav>

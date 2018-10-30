@@ -5,6 +5,7 @@ const router = require('./config/routes');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const auth = require('./lib/auth');
 
 // Express Session
 app.use(session({
@@ -25,10 +26,7 @@ app.use(expressLayouts);
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 
-app.use('*', function(req, res, next){
-  console.log('Incoming request', req.method, req.originalUrl);
-  next();
-});
+app.use('*', auth.checkAuthStatus);
 
 app.use(router);
 
