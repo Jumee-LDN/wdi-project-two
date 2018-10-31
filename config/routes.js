@@ -21,6 +21,15 @@ router.get('/', function(req, res) {
   res.render('pages/home');
 });
 
+// Aboutpage
+router.get('/about', function(req, res) {
+  res.render('pages/about');
+});
+
+router.get('/contact', function(req, res) {
+  res.render('pages/contact');
+});
+
 //NEW RESTAURANT
 router.get('/restaurants/new', restaurantController.new);
 router.post('/restaurants', restaurantController.create);

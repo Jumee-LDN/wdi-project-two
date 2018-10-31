@@ -1,7 +1,36 @@
 <h2>Add Your Review</h2>
-<form action="/restaurants" method="post">
-  <input type="text" name="name" placeholder="Restaurant Name">
-  <input type="text" name="city" placeholder="City Name">
-  <input type="text" name="image" placeholder="Image url">
-  <button>Add</button>
+<hr>
+<form action="/restaurants" method="post" class="add-review-form">
+  <div class="field">
+    <label class="label">Restaurant Name</label>
+    <div class="control">
+      <input class="input" name="name" placeholder="Yummy Zone">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">City</label>
+    <div class="control">
+      <input class="input" name="city" placeholder="London">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Address</label>
+    <div class="control">
+      <input class="input" name="address" placeholder="5 London Road, London, EC1 5RU">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label">Image url</label>
+    <div class="control">
+      <input class="input" name="images" placeholder="https://www.restaurant.com/images.jpg">
+    </div>
+  </div>
+  <div class="field is-grouped" id="submit-cancel-btns">
+    <div class="control">
+      <button class="button is-link">Submit</button>
+    </div>
+    <div class="control">
+      <button class="button is-text">Cancel</button>
+    </div>
+  </div>
 </form>

@@ -13,6 +13,12 @@
   height: 100%;
   margin: 0.5rem;
 }
+
+.restaurant-list h4{
+  padding-bottom: 2rem;
+}
+
+
 body {
   margin: 0;
   background-color: white;
@@ -27,6 +33,7 @@ body {
 footer {
   text-align: center;
   height: 100%;
+  margin-top: 4rem;
   background-color: #ff2a2a;
 }
 .footer-korilla {
@@ -54,7 +61,7 @@ footer {
   height: 100%;
   min-height: 550px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .restaurant-name {
@@ -71,14 +78,53 @@ footer {
   padding-bottom: 1rem;
 }
 
-.welcome-message {
-  font-size: 20px;
+.main h2 {
+  font-size: 25px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-#navbar {
-  background-color: #beff73;
-  height: 30px;
+
+.welcome-message {
+  font-size: 20px;
+  margin: 1.5rem 0;
 }
+
+.add-review-form {
+  display: inline-block;
+  width: 300px;
+}
+
+/* ***********EDIT Review PAGE*********** */
+.edit-form {
+  display: inline-block;
+  width: 300px;
+}
+
+.edit-form div {
+  margin: 1rem 0;
+}
+
+#submit-cancel-btns {
+  display: inline-flex;
+}
+
+/* ***********INDEX PAGE*********** */
+
+.restaurant-list{
+  margin-bottom: 4rem;
+}
+
+.restaurant-list h1{
+  font-weight: 700;
+}
+
+.restaurant-list h4{
+  font-size: 14px;
+}
+
+/* ***********NAV BAR*********** */
+
 .navbar-menu li a {
   color: black;
   font-weight: 700;
@@ -86,17 +132,33 @@ footer {
   text-align: center;
 }
 
+/* ***********ABOUT PAGE*********** */
+
+.about-text {
+  padding-top: 2rem;
+  width: 60%;
+  display: inline-block;
+
+}
+
+
+.contact-text {
+  padding: 1rem;
+}
+
 .restaurant-image {
   width: 300px;
 }
+
 
 .edit-delete-btns {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
-
+.edit-delete-btns div {
+  margin: 0 0.5rem;
+}
 .edit-delete-btns #edit-btn-text{
   font-family: 'Montserrat', sans-serif;
 }
@@ -105,11 +167,35 @@ footer {
   color: #ff2a2a;
   font-family: 'Montserrat', sans-serif;
 }
+
+.add-review-btn {
+  padding-top: 1rem;
+}
+
+#add-review-btn-text {
+  font-weight: 700;
+}
+#add-review-btn-text:hover {
+  color: white;
+}
+
+
+
 .control form{
   text-align: center;
+}
+.gorilla-image {
+  width: 30px;
 }
 
 #city-input-box {
   width: 400px;
   margin: 10px;
+}
+
+
+.thumb-image {
+  width: 100vw;
+  height: 10rem;
+  object-fit: cover;
 }

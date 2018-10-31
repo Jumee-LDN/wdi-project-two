@@ -1,13 +1,30 @@
-<h2>Korean Restaurants in <%= city %></h2>
-<% if(locals.isLoggedIn) { %>
-    <div class="">
-      <button><a href="/restaurants/new">CREATE REVIEW</a></button>
-    </div>
-<% } %>
+<h2>Korean Restaurants in <b><%= city %></b></h2>
+
+<div class="index-result-message">
+  <p>We found <b><%= restaurants.length %></b> restaurants for you
+    <% if(locals.isLoggedIn) { %>
+      <b><%= locals.currentUser.username %>!</b>
+      <% } %>
+      🍚🥢
+    </p>
+</div>
 
 <hr>
+
+<div class="restaurant-list">
 <% restaurants.forEach(restaurant => { %>
-  <div class="">
     <h1><a href="/restaurants/<%= restaurant.id %>"><%= restaurant.name %></a></h1>
-  </div>
+    <h4><%= restaurant.address %></h4>
+    <div class="columns">
+      <div class="column" id="restaurant-thumbs">
+        <a href="/restaurants/<%= restaurant.id %>"><img src="<%= restaurant.images[0] %> " alt="restaurant-image" class="thumb-image"></a>
+      </div>
+    </div>
 <% }) %>
+</div>
+
+<% if(locals.isLoggedIn) { %>
+    <div class="add-review-btn">
+      <button class="button is-primary is-outlined"><a href="/restaurants/new" id="add-review-btn-text">Add Your Review</a></button>
+    </div>
+<% } %>

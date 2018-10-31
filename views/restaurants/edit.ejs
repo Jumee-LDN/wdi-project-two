@@ -1,7 +1,23 @@
-<h2>Edit page</h2>
-<form action="/restaurants/<%= _id %>?_method=PUT" method="post">
-  <input type="text" name="name" value="<%= name %>">
-  <input type="text" name="city" value="<%= city %>">
-  <input type="text" name="image" value="<%= image %>">
-  <button>Edit</button>
+<h2>Edit Your Review</h2>
+<hr>
+<form action="/restaurants/<%= _id %>?_method=PUT" method="post" class="edit-form">
+  <div class="field">
+    <div class="control">
+      <input class="input" type="text" name="name" value="<%= name %>">
+    </div>
+    <div class="control">
+      <input class="input" type="text" name="city" value="<%= city %>">
+    </div>
+    <div class="control">
+      <input class="input" type="text" name="address" value="<%= address %>">
+    </div>
+    <div class="control">
+      <input class="input" type="text" name="images" value="<%= images %>">
+    </div>
+  </div>
+  <div class="field is-grouped" id="submit-cancel-btns">
+    <div class="control">
+      <button class="button is-link">Submit Edit</button>
+    </div>
+  </div>
 </form>
