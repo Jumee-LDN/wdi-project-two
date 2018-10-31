@@ -11,6 +11,10 @@
   <body>
     <% include ./partials/header %>
     <div class="main">
+      <% if(!locals.isLoggedIn) { %>
+        <div class="message-to-login"><b>Hi there,</b> why don't you log in to add your review?</div>
+        <% } %>
+
       <%- body %>
     </div>
     <% include ./partials/footer %>

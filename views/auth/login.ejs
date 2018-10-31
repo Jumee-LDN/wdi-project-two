@@ -1,6 +1,17 @@
-<h2>Please Log In</h2>
-<form class="" action="/login" method="post">
-  <input type="text" name="email" placeholder="email">
-  <input type="text" name="password" placeholder="password">
-  <button>Log in</button>
+<h2>Log In</h2>
+
+
+<form class="login-form" action="/login" method="post">
+  <div class="field">
+    <div class="control">
+      <input class="input" type="email" name="email" placeholder="email">
+    </div>
+    <div class="control">
+      <input class="input" type="text" name="password" placeholder="password">
+    </div>
+  </div>
+
+  <div class="control" id="login-btn">
+    <button class="button is-link">Log in</button>
+  </div>
 </form>

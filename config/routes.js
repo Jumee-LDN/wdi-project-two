@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const restaurantController = require('../controllers/restaurantController');
 const authController = require('../controllers/authController');
-const secureRoute = require('../lib/secureRoute');
+// const secureRoute = require('../lib/secureRoute');
 
 
 // SET UP USER REGISTERATION

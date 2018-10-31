@@ -1,7 +1,19 @@
-<h2>Please Register</h2>
-<form class="" action="/register" method="post">
-  <input type="text" name="username" placeholder="username">
-  <input type="text" name="email" placeholder="email">
-  <input type="text" name="password" placeholder="password">
-  <button>Register</button>
+<h2>Sign up</h2>
+
+<form class="register-form" action="/register" method="post">
+  <div class="field">
+    <div class="control">
+      <input class="input" type="text" name="username" placeholder="username">
+    </div>
+    <div class="control">
+      <input class="input" type="email" name="email" placeholder="email">
+    </div>
+    <div class="control">
+      <input class="input" type="text" name="password" placeholder="password">
+    </div>
+  </div>
+
+  <div class="control" id="register-btn">
+    <button class="button is-link">Register</button>
+  </div>
 </form>
