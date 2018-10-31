@@ -29,11 +29,13 @@ function loginRoute(req, res){
     .then(result => {
       if (!result) {
         // If there is no user
+        console.log('User needs to register');
         res.redirect('/login');
       } else {
         // We've found a user in the database!
         // Write the user's ID into their locker (session).
         // (req.session is the locker)
+        console.log('Existing user!');
         req.session.userId = result._id;
         res.redirect('/');
       }

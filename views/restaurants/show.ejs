@@ -1,26 +1,31 @@
 <div>
-  <h2> name <%= restaurant.name %> </h2>
-  <p> city <%= restaurant.city %> </p>
-  <p> image <%= restaurant.image %> </p>
+  <h2 class="restaurant-name"> <%= restaurant.name %> </h2>
+  <p> <%= restaurant.city %> </p>
 </div>
 
-<div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+<% if(locals.isLoggedIn) { %>
+  <div class="edit-delete-btns">
+    <div>
+      <button class="button is-outlined is-small"><a id="edit-btn-text" href="/restaurants/<%= restaurant.id %>/edit">Edit your review</a></button>
+    </div>
 
-<button><a href="/restaurants/<%= restaurant.id %>/edit">Edit your review</a></button>
+    <div>
+      <form class="" action="/restaurants/<%= restaurant.city %>/<%= restaurant.id %>?_method=DELETE" method="post">
+        <button class="button is-outlined is-small" id="delete-btn-text">Delete the review</button>
+      </form>
+    </div>
+  </div>
+<% } %>
+
+<hr>
+
+<div class="columns" id="image-container">
+  <div class="column" id="image">
+    <% restaurant.images.forEach(image => { %>
+      <img src="<%= image %> " alt="restaurant-image" class="restaurant-image">
+      <% }) %>
+  </div>
+
+</div>
 
 <a href="/restaurants/city/<%= city %>">Go back to <%= city %></a>
-
-<div class="delete-button">
-  <form class="" action="/restaurants/<%= restaurant.city %>/<%= restaurant.id %>?_method=DELETE" method="post">
-    <button>Delete the restaurant</button>
-  </form>
-
-</div>

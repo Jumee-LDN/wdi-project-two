@@ -1,29 +1,115 @@
 * {
   background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.gr__localhost{
+  background-color: inherit;
+}
+
+.brand-logo {
+  width: 35px;
+  height: 100%;
+  margin: 0.5rem;
 }
 body {
   margin: 0;
-  background-color:lightskyblue;
+  background-color: white;
 }
+
+#logo-word {
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+footer {
+  text-align: center;
+  height: 100%;
+  background-color: #ff2a2a;
+}
+.footer-korilla {
+  color: white;
+  width: 20px;
+  padding-top: 12px;
+
+}
+
+.footer-content {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4a4a;
+  padding-top: 20px;
+}
+
+.freepik-line {
+  font-size: 9px;
+  opacity: 0.5;
+  padding: 20px 0;
+}
+
 
 .main {
   height: 100%;
-  min-height: 500px;
+  min-height: 550px;
+  text-align: center;
+  padding-top: 100px;
 }
 
-ul {
+.restaurant-name {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.main h1 {
+  font-size: 30px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.welcome-message {
+  font-size: 20px;
+}
+
+#navbar {
+  background-color: #beff73;
   height: 30px;
-  width: 100vw;
-  background-color: yellow;
-  padding: 0.8rem 0 0.8rem 0.8rem;
-  margin: 0;
+}
+.navbar-menu li a {
+  color: black;
+  font-weight: 700;
+  padding-left: 20px;
+  text-align: center;
 }
 
-li {
-  display: inline-block;
-  padding-right: 10px;
+.restaurant-image {
+  width: 300px;
 }
 
-.city-search{
-    min-height: 300px;
+.edit-delete-btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.edit-delete-btns #edit-btn-text{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.edit-delete-btns #delete-btn-text{
+  color: #ff2a2a;
+  font-family: 'Montserrat', sans-serif;
+}
+.control form{
+  text-align: center;
+}
+
+#city-input-box {
+  width: 400px;
+  margin: 10px;
 }

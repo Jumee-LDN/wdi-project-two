@@ -1,8 +1,17 @@
-<h1>Find Restaurants</h1>
-<div class="city-search">
-  <h2>Enter City Here Below</h2>
-  <form class="" action="/cities" method="post">
-    <input type="text" name="city" placeholder="City Name">
-    <button>Let's Go!</button>
-  </form>
+<div class="welcome-message">
+  <% if(locals.isLoggedIn) { %>
+    <img src="/image/gorilla_full.png" alt="gorilla-image">
+    <p>Welcome back <b><%= locals.currentUser.username %>!</b></p>
+    <% } %>
+  </div>
+
+<h1>Find Korean Restaurants In</h1>
+
+<div class="field">
+  <div class="control">
+    <form class="control" action="/cities" method="post">
+      <input id="city-input-box" class="input is-primary is-medium" type="text" name="city" placeholder="City Name">
+      <p class="help">Hit <b>Enter</b> Key</p>
+    </form>
+  </div>
 </div>
