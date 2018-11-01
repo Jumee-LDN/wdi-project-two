@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const restaurantController = require('../controllers/restaurantController');
+const reviewController = require('../controllers/reviewController');
 const authController = require('../controllers/authController');
 // const secureRoute = require('../lib/secureRoute');
 
@@ -52,6 +53,7 @@ router.put('/restaurants/:id', restaurantController.update);
 //DELETE /restaurants/:id restaurantController.delete
 router.delete('/restaurants/:city/:id', restaurantController.delete);
 
+router.post('/restaurants/city/:city', reviewController.createRoute);
 
 
 module.exports = router;

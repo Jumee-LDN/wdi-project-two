@@ -30,6 +30,30 @@ body {
   letter-spacing: -1px;
 }
 
+/* ***********ADD Review PAGE*********** */
+
+#restaurant-info-box div{
+  width: 400px;
+  display: inline-block;
+}
+
+#restaurant-review-box {
+  /* border: 1px solid #f5f5f5; */
+  background-color: #f5f5f5;
+
+}
+#comment-input-box {
+  width: 400px;
+  display: inline-block;
+}
+#rating-input-box {
+  width: 400px;
+  display: inline-block;
+}
+
+#submit-btn {
+  display: inline-block;
+}
 footer {
   text-align: center;
   height: 100%;

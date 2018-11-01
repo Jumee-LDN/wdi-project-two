@@ -17,9 +17,9 @@ function restaurantIndex(req, res) {
 }
 
 function restaurantShow(req, res) {
-  console.log('we are in show for restaurantController');
   Restaurant
     .findById(req.params.id)
+    .populate('reviews.user')
     .then(restaurant => {
       const city = restaurant.city;
       res.render('restaurants/show', { restaurant, city });
@@ -30,6 +30,7 @@ function restaurantEdit(req, res) {
   Restaurant
     .findById(req.params.id)
     .then(restaurant => {
+      const review = restaurant.reviews;
       res.render('restaurants/edit', restaurant);
     });
 }
@@ -54,6 +55,8 @@ function restaurantCreate(req, res) {
   Restaurant
     .create(req.body)
     .then(restaurant => {
+      restaurant.reviews.push(req.body);
+      restaurant.save();
       res.redirect(`/restaurants/${restaurant._id}`);
     });
 }

@@ -6,9 +6,9 @@ const restaurantSchema = mongoose.Schema({
   images: [{ type: String }],
   address: [{ type: String }],
   reviews: [{
-    user: { type: String },
+    user: { type: mongoose.Schema.ObjectId, ref: 'User'},
     rating: { type: Number, min: 1, max: 10 },
-    comments: { type: String }
+    comment: { type: String }
   }]
 });
 
