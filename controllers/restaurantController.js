@@ -30,7 +30,6 @@ function restaurantEdit(req, res) {
   Restaurant
     .findById(req.params.id)
     .then(restaurant => {
-      const review = restaurant.reviews;
       res.render('restaurants/edit', restaurant);
     });
 }
@@ -38,7 +37,11 @@ function restaurantEdit(req, res) {
 function restaurantUpdate(req, res) {
   Restaurant
     .findByIdAndUpdate(req.params.id, req.body)
-    .then(restaurant => res.redirect(`/restaurants/${restaurant._id}`));
+    .then(restaurant => {
+      restaurant.reviews.splice(0, 1, req.body);
+      restaurant.save();
+      res.redirect(`/restaurants/${restaurant._id}`);
+    });
 }
 
 function restaurantDelete(req, res) {

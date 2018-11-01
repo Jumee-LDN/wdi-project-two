@@ -1,27 +1,29 @@
 * {
-  background-color: inherit;
+  /* background-color: inherit; */
   font-family: 'Montserrat', sans-serif;
 }
-
 
 .gr__localhost{
   background-color: inherit;
 }
 
+body {
+  margin: 0;
+  background-color: white;
+}
+
+/* ***********NAV BAR*********** */
+
+.navbar-menu li a {
+  color: black;
+  font-weight: 700;
+  padding-left: 20px;
+  text-align: center;
+}
 .brand-logo {
   width: 35px;
   height: 100%;
   margin: 0.5rem;
-}
-
-.restaurant-list h4{
-  padding-bottom: 2rem;
-}
-
-
-body {
-  margin: 0;
-  background-color: white;
 }
 
 #logo-word {
@@ -29,6 +31,31 @@ body {
   font-size: 25px;
   letter-spacing: -1px;
 }
+
+
+/* ***********INDEX PAGE*********** */
+
+.restaurant-list{
+  margin-bottom: 4rem;
+}
+
+.restaurant-list h1{
+  font-weight: 700;
+}
+
+.restaurant-list h4{
+  font-size: 14px;
+  padding-bottom: 2rem;
+}
+
+.restaurant-name {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 
 /* ***********ADD Review PAGE*********** */
 
@@ -54,46 +81,14 @@ body {
 #submit-btn {
   display: inline-block;
 }
-footer {
-  text-align: center;
-  height: 100%;
-  margin-top: 4rem;
-  background-color: #ff2a2a;
-}
-.footer-korilla {
-  color: white;
-  width: 20px;
-  padding-top: 12px;
 
-}
-
-.footer-content {
-  font-size: 12px;
-  font-weight: 400;
-  color: #4a4a4a;
-  padding-top: 20px;
-}
-
-.freepik-line {
-  font-size: 9px;
-  opacity: 0.5;
-  padding: 20px 0;
-}
-
+/* ***********Home PAGE*********** */
 
 .main {
   height: 100%;
   min-height: 550px;
   text-align: center;
   padding-top: 60px;
-}
-
-.restaurant-name {
-  font-weight: 700;
-  font-size: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
 }
 
 .main h1 {
@@ -107,7 +102,6 @@ footer {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-
 
 .welcome-message {
   font-size: 20px;
@@ -131,6 +125,39 @@ footer {
   display: inline-block;
   width: 300px;
 }
+
+/* ***********SHOW PAGE*********** */
+
+.review-section {
+  height: 100%;
+  width: 60%;
+  display: inline-block;
+  border: 1.5px solid #f5f5f5;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.review-section p {
+  padding: 0.3rem;
+  display: inline;
+
+}
+.rating-caption-box {
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ff2a2a;
+  border-radius: 10px;
+}
+
+.review-username {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.image-container {
+  display: initial;
+}
+
 
 /* ***********EDIT Review PAGE*********** */
 .edit-form {
@@ -157,8 +184,6 @@ footer {
   margin-bottom: 10px;
 }
 
-
-
 /* ***********Login PAGE*********** */
 .login-form {
   display: inline-block;
@@ -170,28 +195,6 @@ footer {
 }
 
 
-/* ***********INDEX PAGE*********** */
-
-.restaurant-list{
-  margin-bottom: 4rem;
-}
-
-.restaurant-list h1{
-  font-weight: 700;
-}
-
-.restaurant-list h4{
-  font-size: 14px;
-}
-
-/* ***********NAV BAR*********** */
-
-.navbar-menu li a {
-  color: black;
-  font-weight: 700;
-  padding-left: 20px;
-  text-align: center;
-}
 
 /* ***********ABOUT PAGE*********** */
 
@@ -259,4 +262,35 @@ footer {
   width: 100vw;
   height: 10rem;
   object-fit: cover;
+}
+
+
+
+/* ***********FOOTER*********** */
+
+footer {
+  text-align: center;
+  height: 100%;
+  margin-top: 4rem;
+  background-color: #ff2a2a;
+}
+
+.footer-korilla {
+  color: white;
+  width: 20px;
+  padding-top: 12px;
+
+}
+
+.footer-content {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4a4a;
+  padding-top: 20px;
+}
+
+.freepik-line {
+  font-size: 9px;
+  opacity: 0.5;
+  padding: 20px 0;
 }

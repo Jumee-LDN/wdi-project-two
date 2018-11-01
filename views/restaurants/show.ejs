@@ -6,12 +6,12 @@
 <% if(locals.isLoggedIn) { %>
   <div class="edit-delete-btns">
     <div>
-      <button class="button is-outlined is-small"><a id="edit-btn-text" href="/restaurants/<%= restaurant.id %>/edit">Edit your review</a></button>
+      <button class="button is-outlined"><a id="edit-btn-text" href="/restaurants/<%= restaurant.id %>/edit">Edit</a></button>
     </div>
 
     <div>
       <form class="" action="/restaurants/<%= restaurant.city %>/<%= restaurant.id %>?_method=DELETE" method="post">
-        <button class="button is-outlined is-small" id="delete-btn-text">Delete the review</button>
+        <button class="button is-outlined" id="delete-btn-text">Delete</button>
       </form>
     </div>
   </div>
@@ -19,17 +19,18 @@
 
 <hr>
 
+<div class="review-section">
+  <% restaurant.reviews.forEach(review => { %>
+    <p class="review-username"><%= review.user.username.toUpperCase() %></p>
+    <p><%= review.comment %></p>
+    <p><%= '❤️'.repeat(review.rating) %></p>
+    <% }) %>
+</div>
 
 <div class="columns" id="image-container">
   <div class="column" id="image">
     <% restaurant.images.forEach(image => { %>
       <img src="<%= image %> " alt="restaurant-image" class="restaurant-image">
-      <% }) %>
-  </div>
-  <div class="column">
-    <% restaurant.reviews.forEach(review => { %>
-      <p><%= review.user.username %></p>
-      <p><%= review.comment %></p>
       <% }) %>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <h2>Edit Your Review</h2>
-<hr>
+<hr />
 
 <form action="/restaurants/<%= _id %>?_method=PUT" method="post" class="edit-form">
   <div class="field">
@@ -15,9 +15,14 @@
     <div class="control">
       <input class="input" type="text" name="images" value="<%= images %>">
     </div>
-    <div class="field" id="comment-input-box">
-      <textarea name="comment" rows="5" cols="80" class= "textarea is-primary"></textarea>
-    </div>
+
+    <% reviews.forEach(review => { %>
+      <div class="control">
+        <input name="user" value="<%= locals.currentUser._id %>" hidden>
+        <input value="<%= review.comment %>" name="comment" rows="10" cols="80" class= "textarea is-primary"></input>
+        <input class="input" type="number" name="rating" value="<%= review.rating %>">
+      </div>
+    <% }) %>
   </div>
 
 
@@ -26,4 +31,6 @@
       <button class="button is-link">Submit Edit</button>
     </div>
   </div>
+
+
 </form>
