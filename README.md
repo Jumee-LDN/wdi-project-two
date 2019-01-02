@@ -1,10 +1,10 @@
 # hungry korilla
 
 ## GA Project 2
-This was the second project assignment during my time on Web Development Immersive course (12 weeks of full-time) at General Assembly. The project took place in the week 6. [>>To the Site<<](https://hungrykorilla.herokuapp.com/)
+This was the second project assignment during my time on the Web Development Immersive course (12 weeks of full-time) at General Assembly. The project took place in the week 6. [>>To the Site<<](https://hungrykorilla.herokuapp.com/)
 
 **Note**
-- the app is not yet fully responsive. For best experience open on laptop.
+- The app is not yet fully responsive. For best experience open on the laptop.
 - The site may load slower than the average(2-3 seconds) loading time.
 
 #### Course Curriculum :
@@ -35,10 +35,10 @@ Design a full-stack Node app that must include:
 **Timeframe :** 1 week (October 2018)
 ## Concept
 There were three options to choose: Mock-Instagram or Medium or restaurant review site. I chose the last.
-'hungry korilla' is a Korean restaurant review site. The app allows users to Search Korean restaurants filtered by city and post their favourite restaurants.
+'hungry korilla' is a Korean restaurant review site. The app allows users to Search Korean restaurants filtered by city and also user can post their favourite restaurants.
 
 ## Goal
-Understand fundamentals of back-end web development.
+Understand fundamentals of back-end web development and building a full-stack web application using Node.js.
 
 ## Visuals
 ##### User Authentication
@@ -67,10 +67,23 @@ From the experience of [my first project](https://github.com/Jumee-LDN/wdi-proje
 * Created a list of all the features I wanted to create.
 * Created a site structure.
 
+It was tricky to set routes as I wanted to filter restaurants by city and show on the index page. I made a route to render the index page based on input form on the homepage.
+```javascript
+router.post('/cities', restaurantController.filterByCity);
+```
+`restaurantController.filterByCity` takes input from the form, and redirect url with city name(value from html form).
+```javascript
+function restaurantFilterByCity(req, res) {
+  res.redirect(`/restaurants/city/${req.body.city}`);
+}
+```
+
 #### Lessons learned
+It is important to quickly try the routes and models to see an approach is feasible. Planning a practical structure is possible when a reasonable amount of experience and knowledge are gained.
 
 ## Bugs / Moving Forward
-Clean up restrictions around user functionality when logged in vs when not logged in.
+- Search bar is not case flexible.
+- Any logged in user can edit-delete the posts.
 
 ## Technologies Used
 
