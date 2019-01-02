@@ -1,24 +1,27 @@
 # hungry korilla
 
-## WDI-PROJECT-TWO
+## GA Project 2
+This was the second project assignment during my time on Web Development Immersive course (12 weeks of full-time) at General Assembly. The project took place in the week 6. [>>To the Site<<](https://hungrykorilla.herokuapp.com/)
 
-This was the second project assignment during my time on General Assembly's Web Development Immersive Course (week 5-6). 'hungry korilla' is a Korean restaurant review site. The app allows users to:
-* Search Korean restaurants filtered by city.
-* Sign up.
-* Only logged in user can :
-* Post their favourite restaurant.
-* Edit and delete their review.
+**Note**
+- the app is not yet fully responsive. For best experience open on laptop.
+- The site may load slower than the average(2-3 seconds) loading time.
 
+#### Course Curriculum :
 
-##### [Visit the website](https://hungrykorilla.herokuapp.com/) to check it out (the app is not yet fully responsive. For best experience open on laptop).
+> **Week 5** | Module Two
+
+- Node.js
+- Express.js
+- EJS
+- MongoDB
+- User Authentication
+
+*Full curriculum available at the bottom of the page.*
+
+***
 
 ## Brief
-
-Three options:
-* Instagram
-* Medium
-* Restaurant Review
-
 Design a full-stack Node app that must include:
 * At least two models.
 * At least one embedded or referenced schema.
@@ -29,7 +32,16 @@ Design a full-stack Node app that must include:
 * A CSS framework on the front-end.
 * Deployed on Heroku.
 
-##### Sign up and Log in
+**Timeframe :** 1 week (October 2018)
+## Concept
+There were three options to choose: Mock-Instagram or Medium or restaurant review site. I chose the last.
+'hungry korilla' is a Korean restaurant review site. The app allows users to Search Korean restaurants filtered by city and post their favourite restaurants.
+
+## Goal
+Understand fundamentals of back-end web development.
+
+## Visuals
+##### User Authentication
 ![image width="300"](./public/read-me-files/signupandlogin.gif)
 
 ##### Search by city
@@ -38,48 +50,43 @@ Design a full-stack Node app that must include:
 ##### Add Review
 ![image width="300"](./public/read-me-files/addreview.gif)
 
-## Build Process
+## Project Log
+#### Approach
+| Time    | Action                                              |
+| ------- |:---------------------------------------------------:|
+| Day 1   | Project concept, code planning                      |
+| Day 2   | Initial file setup                                  |
+| Day 3   | Models + data and routes - Index, Show              |
+| Day 4   | Routes and forms - New, Create, Edit, Update, Delete|
+| Day 5   | Style                                               |
+| Day 6   | Bug fixing and deployment                           |
+| Day 7   | Presentation                                        |
 
-
-### Plan
+#### Challenges
 From the experience of [my first project](https://github.com/Jumee-LDN/wdi-project-one) I knew it was crucial to get to MVP as soon as possible. With that in mind, I:
 * Created a list of all the features I wanted to create.
 * Created a site structure.
 
-### Build
+#### Lessons learned
 
+## Bugs / Moving Forward
+Clean up restrictions around user functionality when logged in vs when not logged in.
 
+## Technologies Used
 
-### MVP
+* Javascript (ECMAScript6)
+* Node.js
+* Express.js
+* EJS
+* MongoDB
+* HTML5
+* CSS3
+* GitHub
 
+## License
 
-### Refactor
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Bugs
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
-
-### Challenges
-* **Populating Embedded Schema** - In
-* **Silly Mistakes** -
- 1.
- 2.
-
-* **Time & Stress & Productivity Management** -
-
-
-## Moving Forward / Future Features
-Some features I could add moving forward:
-* Clean up restrictions around user functionality when logged in vs when not logged in.
-
-
-## Lessons Learned
-* **Plan is just a plan.**
-
-
-## Other GA projects
-* [Project One (Browser-based game)](https://github.com/Jumee-LDN/wdi-project-one)
-
-## Contact Me
-Feel free to ask me questions about this project or anything else.
-
-You can also find me on [LinkedIn](https://www.linkedin.com/) 
+***
