@@ -103,3 +103,55 @@ It is important to quickly try the routes and models to see an approach is feasi
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
 ***
+
+## Course Curriculum
+Please see below for the details of my training and links to more projects.
+
+> **Week 1-3** | Module One
+
+- HTML5
+- CSS3 and CSS Animation
+- Sass
+- JavaScript
+- jQuery
+
+> **Week 4**
+
+- *Project 1* : Iguana vs Snakes | [GitHub](https://github.com/Jumee-LDN/wdi-project-one) |
+[Play Link](https://jumee-ldn.github.io/wdi-project-one/)
+
+> **Week 5** | Module Two
+
+- Node.js
+- Express.js
+- EJS
+- MongoDB
+- User Authentication
+
+> **Week 6**
+
+- *Project 2* : hungry korilla | [GitHub](https://github.com/Jumee-LDN/wdi-project-two) |
+[Heroku](https://hungrykorilla.herokuapp.com/)
+
+> **Week 7-8** | Module Three
+
+- Angular
+- Token Authentication & Session Authentication
+- Using external API
+- Mocha and Chai
+
+> **Week 9**
+
+- *Project 3* : xhibit | [GitHub](https://github.com/Jumee-LDN/wdi-project-3) |
+[Heroku](https://xhibit.herokuapp.com/#!/)
+
+> **Week 10-11** | Module Four
+
+- React
+- JSX
+- ES6
+
+> **Week 12**
+
+- *Project 4* : Nomad | [GitHub](https://github.com/Jumee-LDN/wdi-project-four) |
+[Heroku](https://nomad-ga.herokuapp.com/)
