@@ -31,8 +31,8 @@ Design a full-stack Node app that must include:
 * EJS for template creation.
 * A CSS framework on the front-end.
 * Deployed on Heroku.
-
 **Timeframe :** 1 week (October 2018)
+
 ## Concept
 There were three options to choose: Mock-Instagram or Medium or restaurant review site. I chose the last.
 'hungry korilla' is a Korean restaurant review site. The app allows users to Search Korean restaurants filtered by city and also user can post their favourite restaurants.
@@ -137,7 +137,7 @@ Please see below for the details of my training and links to more projects.
 
 - Angular
 - Token Authentication & Session Authentication
-- Using external API
+- Third-party APIs
 - Mocha and Chai
 
 > **Week 9**
@@ -155,3 +155,11 @@ Please see below for the details of my training and links to more projects.
 
 - *Project 4* : **Nomad** | [GitHub](https://github.com/Jumee-LDN/wdi-project-four) |
 [Heroku](https://nomad-ga.herokuapp.com/)
+
+***
+
+## Contact
+#### Jumee Lee
+Email : jumeelee.london@gmail.com
+
+[Portfolio](https://jumeelee.co.uk/) | [LinkedIn](https://www.linkedin.com/in/jumeelee/) | [GitHub](https://github.com/Jumee-LDN)
