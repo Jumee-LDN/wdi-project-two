@@ -1,5 +1,3 @@
-<a><img style="width: 50px; margin: 50px 50px 20px 50px;" src="./public/images/gorilla_red.svg" title="FVCproductions" alt="FVCproductions"></a>
-
 # hungry korilla
 
 ## GA Project 2
