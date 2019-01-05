@@ -7,7 +7,7 @@ This was the second project assignment during my time on the Web Development Imm
 
 **Note**
 - The app is not yet fully responsive. For best experience open on the laptop.
-- The site may load slower than the average(2-3 seconds) loading time.
+- The landing page may take longer than the average page load time.
 
 #### Course Curriculum :
 
