@@ -33,10 +33,11 @@ Design a full-stack Node app that must include:
 * EJS for template creation.
 * A CSS framework on the front-end.
 * Deployed on Heroku.
+
 **Timeframe :** 1 week (October 2018)
 
 ## Concept
-There were three options to choose: Mock-Instagram or Medium or restaurant review site. I chose the last.
+There were three options to choose from: Mock-Instagram or Medium or restaurant review site. I chose the last.
 'hungry korilla' is a Korean restaurant review site. The app allows users to Search Korean restaurants filtered by city and also user can post their favourite restaurants.
 
 ## Goal
@@ -89,13 +90,14 @@ It is important to quickly try the routes and models to see an approach is feasi
 
 ## Technologies Used
 
-* Javascript (ECMAScript6)
+* JavaScript (ECMAScript6)
 * Node.js
 * Express.js
 * EJS
 * MongoDB
 * HTML5
 * CSS3
+* Bulma
 * GitHub
 
 ## License
