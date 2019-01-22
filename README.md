@@ -87,6 +87,7 @@ It is important to quickly try the routes and models to see an approach is feasi
 ## Bugs / Moving Forward
 - Search bar is not case flexible.
 - Any logged in user can edit-delete the posts.
+- User can upload only one image per post. 
 
 ## Technologies Used
 
