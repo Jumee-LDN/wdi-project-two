@@ -3,7 +3,7 @@
 # hungry korilla
 
 ## GA Project 2
-This was the second project assignment during my time on the Web Development Immersive course (12 weeks of full-time) at General Assembly. The project took place in the week 6. [>>To the Site<<](https://hungrykorilla.herokuapp.com/)
+This was the second project assignment during my time on the Web Development Immersive course (12 weeks of full-time) at General Assembly. The project took place in the week 6.
 
 **Note**
 - The app is not yet fully responsive. For best experience open on the laptop.
